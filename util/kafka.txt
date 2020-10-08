@@ -1,0 +1,13 @@
+Topics:
+
+replytopic2
+replytopicmusic
+replytopicmusic_listener
+requesttopic2
+requesttopicmusic
+requesttopicmusic_listener
+requesttopicmusic_upload
+topic_music_status2
+
+Should create config of requesttopicmusic_upload
+$ bin/kafka-topics.sh --alter --zookeeper localhost:2181 --topic requesttopicmusic_upload --config max.message.bytes=10485670

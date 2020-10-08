@@ -1,0 +1,19 @@
+cqlsh -u user -p password
+
+CREATE KEYSPACE IF NOT EXISTS customer_keyspace WITH REPLICATION = {'class':'NetworkTopologyStrategy','datacenter1':3};
+
+USE customer_keyspace;
+
+CREATE TABLE customer (id text PRIMARY KEY, name text, country text, musicStyle text);
+
+SELECT * FROM customer;
+
+CREATE KEYSPACE IF NOT EXISTS music_keyspace WITH REPLICATION = {'class': 'NetworkTopologyStrategy', 'datacenter1': 3};
+
+USE music_keyspace;
+
+CREATE TABLE music (id text PRIMARY KEY, name text, path text, status text, idCustomer text, size int);
+
+SELECT * FROM music;
+
+
