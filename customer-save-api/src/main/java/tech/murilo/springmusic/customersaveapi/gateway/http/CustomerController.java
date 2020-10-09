@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.murilo.springmusic.customersaveapi.model.Customer;
 import tech.murilo.springmusic.customersaveapi.service.SaveCustomerService;
+import tech.murilo.springmusic.musicdata.customer.Customer;
 
 import java.util.concurrent.ExecutionException;
 

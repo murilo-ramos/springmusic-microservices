@@ -65,6 +65,12 @@
 			<artifactId>validation-api</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>tech.murilo.springmusic</groupId>
+			<artifactId>music-data</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+
 		<!-- TEST -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

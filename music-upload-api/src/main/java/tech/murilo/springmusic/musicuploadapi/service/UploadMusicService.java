@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import tech.murilo.springmusic.musicuploadapi.model.MusicUpload;
+import tech.murilo.springmusic.musicdata.music.MusicUpload;
 
 import java.io.IOException;
 

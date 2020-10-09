@@ -3,8 +3,8 @@ package tech.murilo.springmusic.musicaddapi.gateway.http;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import tech.murilo.springmusic.musicaddapi.model.Music;
 import tech.murilo.springmusic.musicaddapi.service.SaveMusicService;
+import tech.murilo.springmusic.musicdata.music.Music;
 
 import java.util.concurrent.ExecutionException;
 

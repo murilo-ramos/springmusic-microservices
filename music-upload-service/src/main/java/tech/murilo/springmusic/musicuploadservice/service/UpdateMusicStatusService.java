@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import tech.murilo.springmusic.musicuploadservice.model.Music;
+import tech.murilo.springmusic.musicdata.music.Music;
 
 @Service
 public class UpdateMusicStatusService {

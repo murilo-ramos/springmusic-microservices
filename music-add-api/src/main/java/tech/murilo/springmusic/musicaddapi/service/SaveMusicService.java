@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.requestreply.ReplyingKafkaTemplate;
 import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.stereotype.Service;
-import tech.murilo.springmusic.musicaddapi.model.Music;
+import tech.murilo.springmusic.musicdata.music.Music;
 
 import java.util.concurrent.ExecutionException;
 

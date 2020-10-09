@@ -56,6 +56,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>tech.murilo.springmusic</groupId>
+			<artifactId>music-data</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>

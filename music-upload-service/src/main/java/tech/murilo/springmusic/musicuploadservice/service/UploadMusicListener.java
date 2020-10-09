@@ -9,7 +9,7 @@ import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.handler.annotation.Headers;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
-import tech.murilo.springmusic.musicuploadservice.model.MusicStatus;
+import tech.murilo.springmusic.musicdata.music.MusicStatus;
 
 import java.io.IOException;
 
@@ -44,7 +44,7 @@ public class UploadMusicListener {
         var aByte = (Bytes) record.value();
 
         var music = uploadS3Service.execute(idCustomer, idMusic, aByte);
-        music.setStatus(MusicStatus.READY.toString());
+        music.setStatus(MusicStatus.READY.getValue());
 
         updateMusicStatusService.execute(music);
     }

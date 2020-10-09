@@ -64,8 +64,8 @@ public class KafkaConfig {
 
     @Bean
     public ReplyingKafkaTemplate<String, String, String> replyKafkaTemplate(ProducerFactory<String, String> pf, KafkaMessageListenerContainer<String, String> container) {
-        ReplyingKafkaTemplate template = new ReplyingKafkaTemplate<>(pf, container);
-        template.setDefaultReplyTimeout(Duration.ofMillis(60000L));
+        var template = new ReplyingKafkaTemplate<>(pf, container);
+        template.setDefaultReplyTimeout(Duration.ofSeconds(5));
         return template;
     }
 

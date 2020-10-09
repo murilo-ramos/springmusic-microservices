@@ -1,7 +1,5 @@
 package tech.murilo.springmusic.listenermusicapi.service;
 
-import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.services.s3.model.S3ObjectInputStream;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.header.internals.RecordHeader;
@@ -10,7 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.requestreply.ReplyingKafkaTemplate;
 import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.stereotype.Service;
-import tech.murilo.springmusic.listenermusicapi.model.Music;
+import tech.murilo.springmusic.musicdata.music.Music;
 
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;

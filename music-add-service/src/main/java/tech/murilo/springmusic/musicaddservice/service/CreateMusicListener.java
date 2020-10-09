@@ -7,7 +7,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Service;
 import tech.murilo.springmusic.musicaddservice.model.Music;
-import tech.murilo.springmusic.musicaddservice.model.MusicStatus;
+import tech.murilo.springmusic.musicdata.music.MusicStatus;
 
 @Service
 public class CreateMusicListener {
@@ -21,7 +21,7 @@ public class CreateMusicListener {
         var mapper = new ObjectMapper();
 
         Music music = mapper.readValue(json, Music.class);
-        music.setStatus(MusicStatus.WAIT_SAVE_PATH.name());
+        music.setStatus(MusicStatus.WAIT_SAVE_PATH.getValue());
 
         musicManagementService.add(music);
 

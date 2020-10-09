@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 import tech.murilo.springmusic.musicaddservice.model.Music;
-import tech.murilo.springmusic.musicaddservice.model.MusicStatus;
 import tech.murilo.springmusic.musicaddservice.repository.MusicRepository;
 
 @Service

@@ -7,7 +7,7 @@ import com.amazonaws.services.s3.S3ClientOptions;
 import org.apache.kafka.common.utils.Bytes;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import tech.murilo.springmusic.musicuploadservice.model.Music;
+import tech.murilo.springmusic.musicdata.music.Music;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,5 +60,4 @@ public class UploadS3Service {
     private String buildFileName(String idCustomer, String idMusic) {
         return idCustomer.concat("-").concat(idMusic).concat(MP3);
     }
-
 }
